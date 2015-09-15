@@ -1,0 +1,374 @@
+Source: d630-metapackages
+Maintainer: D630 <d630@posteo.net>
+Section: metapackages
+Priority: extra
+Standards-Version: 3.9.6
+Build-Depends: debhelper (>= 7.0.0)
+
+Package:    d630-base-extension
+Depends:    bash-builtins,
+            bash-completion,
+            bc,
+            bsdmainutils,
+            ccze,
+            console-setup,
+            cpufrequtils,
+            csh,
+            dc,
+            dvtm,
+            ed,
+            emacs-nox,
+            file,
+            gpm,
+            htop,
+            info,
+            keychain,
+            ksh,
+            less,
+            locales,
+            lsb-release,
+            lsof,
+            manpages,
+            mksh,
+            mutt-patched,
+            ncdu,
+            newsbeuter,
+            pass,
+            patch,
+            pinentry-curses,
+            pm-utils,
+            pwgen,
+            ranger,
+            rc,
+            renameutils,
+            rlfe,
+            strace,
+            suckless-tools,
+            sudo,
+            taskwarrior,
+            tcsh,
+            time,
+            tmux,
+            tree,
+            tzwatch,
+            usb-modeswitch,
+            usbutils,
+            vim-nox,
+            vim-pathogen,
+            xfonts-terminus,
+            xfsprogs,
+            zsh,
+            ${misc:Depends}
+Recommends: d630-vcs
+Suggests:   d630-archive-tools,
+            d630-backup-tools,
+            d630-commandline-media,
+            d630-dev,
+            d630-networking,
+            d630-partitioning,
+XB-Important: yes
+Architecture: all
+Description: Extend the Debian base system
+ with some packages.
+
+#Package:    d630-servers
+#Depends:    ,
+#XB-Important: yes
+#Architecture: all
+#Description: foo bar ...
+
+Package:    d630-vcs
+Depends:    bzr,
+            bzrtools,
+            cvs,
+            git,
+            git-cvs,
+            git-svn,
+            mercurial,
+            subversion,
+            subversion-tools,
+            ${misc:Depends}
+XB-Important: yes
+Architecture: all
+Description: Install some version control
+ systems.
+
+Package:    d630-partitioning
+Depends:    exfat-utils,
+            extundelete,
+            lshw,
+            memtest86+,
+            parted,
+            pciutils,
+            ${misc:Depends}
+XB-Important: yes
+Architecture: all
+Description: Install packages for manipulating
+ partitions.
+
+Package:    d630-archive-tools
+Depends:    arj,
+            atool,
+            bzip2,
+            extract,
+            lzop,
+            rzip,
+            tardiff,
+            unace,
+            unalz,
+            unp,
+            unrar,
+            unzip,
+            xz-utils,
+            zip,
+            zoo,
+            ${misc:Depends}
+XB-Important: yes
+Architecture: all
+Description: Install some archive formats and tools
+ for handling them.
+
+Package:    d630-commandline-media
+Depends:    alsa-base,
+            alsa-tools,
+            alsa-utils,
+            beets,
+            fbcat,
+            fbi,
+            firmware-linux,
+            firmware-linux-nonfree,
+            flac,
+            imagemagick,
+            lame,
+            libimage-exiftool-perl,
+            libopus0,
+            mediainfo,
+            mkvtoolnix,
+            mpd,
+            mplayer,
+            mpv,
+            ncmpcpp,
+            oggconvert,
+            opus-tools,
+            pdftk,
+            sox,
+            vorbis-tools,
+            vorbisgain,
+            ${misc:Depends}
+XB-Important: yes
+Architecture: all
+Description: Install some packages for the commandline with
+ the topic "media".
+
+Package:    d630-networking
+Depends:    aria2,
+            curl,
+            dnsutils,
+            elinks,
+            ftp-ssl,
+            gopher,
+            imapfilter,
+            libnss-mdns,
+            links2,
+            lynx,
+            msmtp,
+            netcat-traditional,
+            ntpdate,
+            offlineimap,
+            openssh-client,
+            oping,
+            prips,
+            proxychains,
+            rsync,
+            ssh-askpass,
+            sshfs,
+            surfraw,
+            swaks,
+            tcpdump,
+            telnet-ssl,
+            transmission,
+            unison,
+            whois,
+            wireless-tools,
+            wpasupplicant,
+            youtube-dl,
+            ${misc:Depends}
+XB-Important: yes
+Architecture: all
+Description: Install packages for communicating
+ via the network.
+
+Package:    d630-dev
+Depends:    ack-grep,
+            asciidoc,
+            apt-file,
+            apt-xapian-index,
+            aptitude,
+            build-essential,
+            cdbs,
+            cmake,
+            colordiff,
+            colorgcc,
+            colormake,
+            cpanminus,
+            debconf-utils,
+            debhelper,
+            deborphan,
+            debsums,
+            debtree,
+            detox,
+            devscripts,
+            dh-make,
+            dput,
+            exuberant-ctags,
+            fakeroot,
+            lintian,
+            mr,
+            pandoc,
+            pbuilder,
+            quilt,
+            silversearcher-ag,
+            source-highlight,
+            sqlite3,
+            stow,
+            tofrodos,
+            xstow,
+            ${misc:Depends}
+XB-Important: yes
+Architecture: all
+Description: Install many packages with the topics
+ "package building" and "coding".
+
+Package:    d630-backup-tools
+Depends:    attic,
+            bup,
+            obnam,
+            notmuch,
+            notmuch-mutt,
+            ${misc:Depends}
+XB-Important: yes
+Architecture: all
+Description: Install some packages for backupping
+ files.
+
+Package:    d630-xorg
+Depends:    autocutsel,
+            compton,
+            cwm,
+            dmz-cursor-theme,
+            dunst,
+            numlockx,
+            redshift,
+            rxvt-unicode-256color,
+            spectrwm,
+            unclutter,
+            wmctrl,
+            x11-utils,
+            x11-xkb-utils,
+            x11-xserver-utils,
+            xauth,
+            xbindkeys,
+            xclip,
+            xcursor-themes,
+            xdotool,
+            xinit,
+            xinput,
+            xkbset,
+            xorg,
+            xscreensaver,
+            xsel,
+            xterm,
+            xtightvncviewer,
+            xvkbd,
+            ${misc:Depends}
+Recommends: d630-base-xextension
+Suggests:   d630-xmedia,
+            d630-xnetworking,
+            d630-xoffice
+XB-Important: yes
+Architecture: all
+Description: Install the X server and many utilities. Furthermore, install some
+ window managers.
+
+Package:    d630-base-xextension
+Depends:    d630-base-extension,
+            d630-xorg,
+            desktop-base,
+            fonts-dejavu,
+            fonts-droid,
+            gitk,
+            gksu,
+            menu,
+            pinentry-gtk2,
+            spacefm,
+            sqlitebrowser,
+            ttf-bitstream-vera,
+            ttf-mscorefonts-installer,
+            ${misc:Depends}
+XB-Important: yes
+Architecture: all
+Description: Extend the Debian base system and its extension with some X
+ packages.
+
+Package:    d630-xoffice
+Depends:    d630-xorg,
+            emacs,
+            groff,
+            jabref,
+            libreoffice,
+            libreoffice-gtk,
+            texlive,
+            vim-gtk,
+            zotero-standalone,
+            ${misc:Depends}
+XB-Important: yes
+Architecture: all
+Description: Install some office packages, which
+ have a GUI.
+
+Package:    d630-xnetworking
+Depends:    d630-xorg,
+            d630-networking,
+            chromium,
+            iceweasel,
+            surf,
+            xombrero,
+            ${misc:Depends}
+XB-Important: yes
+Architecture: all
+Description: Install some packages with the topic "networking", which have a
+ GUI.
+
+Package:    d630-xmedia
+Depends:    d630-commandline-media,
+            d630-xorg,
+            feh,
+            flashplugin-nonfree,
+            gimp,
+            graphviz,
+            gstreamer0.10-alsa,
+            gstreamer0.10-fluendo-mp3,
+            gstreamer0.10-plugins-bad,
+            gstreamer0.10-plugins-base,
+            gstreamer0.10-plugins-good,
+            gstreamer0.10-plugins-ugly,
+            icedtea-plugin,
+            inkscape,
+            libav-tools,
+            libavcodec-extra,
+            libdvdcss2,
+            libgstreamer-interfaces-perl,
+            libgstreamer-perl,
+            libquicktime2,
+            libxvidcore4,
+            mediathekview,
+            mupdf,
+            pepperflashplugin-nonfree,
+            scrot,
+            sxiv,
+            zathura,
+            ${misc:Depends}
+XB-Important: yes
+Architecture: all
+Description: Install some packages with GUI, which
+ have a GUI.
